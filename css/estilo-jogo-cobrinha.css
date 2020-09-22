@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#principal{
+    display: flex;
+    flex-direction: column;
+}
+
+div#secundaria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -5px;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+div#titulo-jogo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    border: 5px solid black;
+}
+
+div#configuracao{
+    display: flex;
+    flex-direction: row;
+}
+
+div#configuracao-jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+div#configuracao-centro-div{
+    border-left: 3px solid black;
+}
+
+div#configuracao-placar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+select#lista-velocidades{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+div#botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+div#botoes button{
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    width: 120px;
+    cursor: pointer;
+}
+
+div#placar{
+    width: 30%;
+}
+
+div#area-ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+div#P1, div#P2, div#P3, div#P4, div#P5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#botoes-ranking{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 2px solid #000;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  tr:nth-child(2n+3) {
+    background-color: #dddddd;
+  }
+
+  tr#tabela-cabecalho{
+      font-weight: bold;
+  }
+
+  div#botoes-ranking button{
+    height: 40px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
