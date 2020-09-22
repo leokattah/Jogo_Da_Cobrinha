@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="../css/estilo-jogo-cobrinha.css">
+    <script defer src="../js/funcoes-jogo-cobrinha.js"></script>
+    <title>Jogo da Cobrinha</title>
+</head>
+<body>
+    <div id="principal">
+        <div id="titulo-jogo">Jogo da Cobrinha</div>
+        <div id="secundaria">
+            <div id="area-jogo">
+                <div id="area">
+                    <canvas id="cobrinha" width="512" height="512"></canvas>
+                </div>
+                <div id="configuracao">
+                    <div id="configuracao-jogo">
+                        <div>
+                            <label for="lista-velocidades">Velocidade</label>
+                            <select id="lista-velocidades">
+                                <option value="500">1x</option>
+                                <option value="450">2x</option>
+                                <option value="400">3x</option>
+                                <option value="350">4x</option>
+                                <option value="300">5x</option>
+                                <option value="250">6x</option>
+                                <option value="200">7x</option>
+                                <option value="150">8x</option>
+                                <option value="100">9x</option>
+                                <option value="50">10x</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="borda-infinita" name="borda-infinita" checked="checked">
+                            <label for="borda-infinita">Borda infinita</label>
+                        </div>
+                    </div>
+                    <div id="configuracao-centro-div"></div>
+                    <div id="configuracao-placar">
+                        <label>Frutas coletadas: <span id="frutas-placar">0</span></label>
+                    </div>
+                </div>
+                <div id="botoes">
+                    <button id="botao-iniciar-jogo" onclick="iniciarJogo()">Iniciar Jogo</button>
+                    <button id="botao-resetar-jogo" onclick="resetarJogo()">Resetar Jogo</button>
+                    <button id="botao-parar-jogo" onclick="pararJogo()">Parar Jogo</button>
+                </div>
+            </div>
+            <div id="placar">
+                <div id="area-ranking">
+                    <div id="titulo-area-ranking">
+                        <table id="tabela-ranking">
+                            <tr>
+                                <th colspan="4">Ranking</th>
+                            </tr>
+                            <tr id="tabela-cabecalho">
+                                <td>Pos.</td>
+                                <td>Frutas</td>
+                                <td>Veloc.</td>
+                                <td>Borda Inf.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="botoes-ranking">
+                    <button id="botao-resetar-ranking" onclick="resetarRanking()">Resetar ranking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
